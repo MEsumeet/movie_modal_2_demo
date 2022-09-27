@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* -----------------------helper css------------------- */
+
+:root{
+    --primary-color: #693b69;
+    --secondary-color: #ecd4ea;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+.btn{
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+/* -----------------header css ------------*/
+
+.header h1{
+    color: var(--secondary-color);
+    text-align: center;
+    text-shadow: 2px 2px 10px var(--secondary-color);
+    padding: 20px 0;
+    font-size: 36px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.interaction .form-group{
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+}
+
+.interaction input{
+    max-width: 40%;
+}
+
+
+/*------------------- movieCards css ---------------*/
+.movieCards{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--primary-color);
+}
+.card{
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+    padding: 20px 10px 0;
+}
+.card-body {
+    padding: 10px;
+}
+
+.posters img {
+	width: 100%;
+	height: 220px;
+    border-radius: 5px;
+}
+.posters figcaption{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    text-transform: capitalize;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+}
+.posters figcaption h4{
+    width: 75%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.review > h5{
+    text-decoration: 2px underline;
+    font-size: 18px;
+}
+.review > p{
+    height: 80px;
+    padding: 10px;
+    overflow-y: scroll;
+    background-color: rgba(253,253,253,50%);
+    font-size: 14px;
+}
+
+
+/* --------------modalform css -----------------*/
+
+.modalForm{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 70%);
+}
+
+.modalHeading{
+    display: flex;
+    justify-content: space-between;
+}
+.modalHeading h3{
+    font-weight: bold;
+}
+.modalHeading i{
+    color: red;
+    cursor: pointer;
+}
+
+.addMovie{
+    width: 40%;
+    padding: 20px;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+    border: 2px solid rgba(0, 0, 0, 50%);
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+.inputs .txtArea{
+    display: flex;
+    align-items: flex-start;
+}
+.inputs .txtArea textarea{
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+
+
